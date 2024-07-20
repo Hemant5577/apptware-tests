@@ -4,9 +4,15 @@ spring:
     username: username
     url: jdbc:h2:mem:testdb
     password: password
+  h2:
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
+
